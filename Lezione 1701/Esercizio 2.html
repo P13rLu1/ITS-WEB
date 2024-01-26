@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabella Utente</title>
+    <style>
+      table {
+        border-collapse: separate;
+        width: 50%;
+        margin: 20px;
+        border: solid black 1px;
+        border-radius: 10px; /* Applica bordo rotondo solo agli angoli superiori */
+      }
+
+      th,
+      td {
+        border-top: solid black 1px;
+      }
+
+      th {
+        border-top: none;
+      }
+
+      td:first-child,
+      th:first-child {
+        border-left: none;
+      }
+
+      td.center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col style="width: 50%" />
+        <!-- Definisce la larghezza della prima colonna -->
+        <col style="width: 50%" />
+        <!-- Definisce la larghezza della seconda colonna -->
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+      </tr>
+      <tr>
+        <td>Silvio</td>
+        <td>Albi</td>
+      </tr>
+      <tr>
+        <td>Simone</td>
+        <td>Lupo</td>
+      </tr>
+      <tr>
+        <td>Simone</td>
+        <td>Cervino</td>
+      </tr>
+      <tr>
+        <td class="center" colspan="2">Ho Messo 3 Utenti</td>
+      </tr>
+    </table>
+  </body>
+</html>

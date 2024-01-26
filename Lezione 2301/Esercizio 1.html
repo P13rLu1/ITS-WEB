@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Contents/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png"
+      type="image/png"
+    />
+    <title>Contattini</title>
+  </head>
+  <body>
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="animateH">Inserisci Qui I Tuoi Dati</h2>
+      <h3 id="error-box"></h3>
+      <form action="Contents/submitOK.html" id="form" method="get">
+        <div class="row"><h3 id="error-box"></h3></div>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              <label for="Cognome">Cognome:*</label>
+              <input
+                id="Cognome"
+                type="text"
+                placeholder="Mario"
+                required
+                class="form-control"
+                maxlength="40"
+              />
+            </div>
+            <div class="form-group">
+              <label for="regione">Regione Di Residenza:*</label>
+              <select required id="regione" class="form-control">
+                <option value="Scegli" disabled selected>
+                  -Scegli Una Delle Seguenti-
+                </option>
+                <option class="form-control" value="Abruzzo">Abruzzo</option>
+                <option class="form-control" value="Basilicata">
+                  Basilicata
+                </option>
+                <option class="form-control" value="Calabria">Calabria</option>
+                <option class="form-control" value="Campania">Campania</option>
+                <option class="form-control" value="Emilia Romagna">
+                  Emilia Romagna
+                </option>
+                <option class="form-control" value="Friuli Venezia Giulia">
+                  Friuli Venezia Giulia
+                </option>
+                <option class="form-control" value="Lazio">Lazio</option>
+                <option class="form-control" value="Liguria">Liguria</option>
+                <option class="form-control" value="Lombardia">
+                  Lombardia
+                </option>
+                <option class="form-control" value="Marche">Marche</option>
+                <option class="form-control" value="Molise">Molise</option>
+                <option class="form-control" value="Piemonte">Piemonte</option>
+                <option class="form-control" value="Puglia">Puglia</option>
+                <option class="form-control" value="Sardegna">Sardegna</option>
+                <option class="form-control" value="Sicilia">Sicilia</option>
+                <option class="form-control" value="Toscana">Toscana</option>
+                <option class="form-control" value="Trentino Alto Adige">
+                  Trentino Alto Adige
+                </option>
+                <option class="form-control" value="Umbria">Umbria</option>
+                <option class="form-control" value="Val d'Aosta">
+                  Val d'Aosta
+                </option>
+                <option class="form-control" value="Veneto">Veneto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="telephone">Numero Di Telefono:*</label
+              ><input
+                type="tel"
+                id="telephone"
+                required
+                class="form-control"
+                pattern="[o-9]+"
+                maxlength="16"
+                placeholder="123 123 1234"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-group">
+              <label for="Nome">Nome:*</label>
+              <input
+                id="Nome"
+                type="text"
+                placeholder="Rossi"
+                required
+                class="form-control"
+                maxlength="30"
+              />
+            </div>
+            <div class="form-group">
+              <label for="mail">Email:</label
+              ><input
+                type="email"
+                id="mail"
+                class="form-control"
+                placeholder="x@x.x"
+                maxlength="30"
+              />
+            </div>
+            <div class="formgroup">
+              <label for="flex">Sesso:</label><br />
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">F</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2">M</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="column"
+              >Commenti Personali:</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="12"
+              cols="60"
+              placeholder="inserisci qui il tuo commento..."
+            ></textarea>
+          </div>
+          <div class="column">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">
+                Invia
+              </button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-group">
+              <button type="reset" class="btn btn-primary btn-lg btn-block">
+                Resetta
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

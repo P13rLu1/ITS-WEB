@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Form Contatti/Contents/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png"
+      type="image/png"
+    />
+    <script src="Form Contatti/Contents/javascript.js"></script>
+    <title>Contatti</title>
+  </head>
+  <body>
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="animateH">Contattaci</h2>
+      <h3 id="error-box"></h3>
+      <form
+        id="form"
+        action="Form Contatti/Contents/submitOK.html"
+        method="GET"
+        onSubmit="return validaDati();"
+      >
+        <div class="row">
+          <p id="error-box"></p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              <label for="Nome">Nome:</label>
+              <input
+                type="text"
+                placeholder="Mario"
+                id="class"
+                name="reset"
+                required
+                class="form-control"
+                maxlength="20"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Mail">Mail:</label>
+              <input
+                type="email"
+                name="reset"
+                id="class"
+                required
+                class="form-control"
+                placeholder="x@x.x"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Problem">Che Problema Hai:</label>
+              <select required id="indirizzo" class="form-control">
+                <option value="Scegli" disabled selected>
+                  -Scegli Una Delle Seguenti-
+                </option>
+                <option class="form-control" value="Congestione">
+                  Congestione
+                </option>
+                <option class="form-control" value="Diarrea">Diarrea</option>
+                <option class="form-control" value="Esplosione">
+                  Esplosione
+                </option>
+                <option class="form-control" value="Costipazione">
+                  Costipazione
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Il Tuo Messaggio:</label>
+              <textarea
+                name="message"
+                class="form-control"
+                id="class"
+                placeholder="scrivi qui il tuo messagio"
+              ></textarea>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                id="class"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Mammut</label
+              >
+
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+                id="class"
+              />
+
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Gatto
+              </label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+                id="class"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Cane
+              </label>
+            </div>
+            <div class="row">
+              <p id="error-box"></p>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">
+                Invia
+              </button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-group">
+              <label for="Cognome">Cognome:</label>
+              <input
+                type="text"
+                placeholder="Rossi"
+                id="class"
+                name="reset"
+                required
+                class="form-control"
+                maxlength="20"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Numero">Numero:</label
+              ><input
+                type="number"
+                placeholder="123-123-1234"
+                name="reset"
+                id="class"
+                required
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="figli">Numero Figli:</label>
+              <input
+                type="number"
+                name="figli"
+                id="class"
+                required
+                class="form-control"
+                style="margin-top: 2px"
+              />
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Autorizzazione di sta ceppa :)</label
+              >
+            </div>
+            <br />
+            <div class="form-group">
+              <button type="reset" class="btn btn-primary btn-lg btn-block">
+                Resetta
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

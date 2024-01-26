@@ -1,0 +1,97 @@
+div {
+  display: block;
+}
+
+html {
+  background-color: #191919;
+  scroll-behavior: smooth;
+}
+
+textarea{
+  resize: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  font-family: Candara;
+  font-size: 22px;
+}
+
+form {
+  margin-top: 50px;
+  padding: 20px;
+  border: 10px solid #8e8e8e;
+  border-radius: 22px;
+  background-color: #e6e6e6;
+  font-size: 12px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stileTitolo {
+  color: white;
+  text-align: center;
+} /*qua si da' il colore alla classe stileTitolo e lo si mette al centro (viene soppiantato dal bootstrap pero' perche' questa classe non esiste nell'html)*/
+
+h3 {
+  color: red !important;
+}
+
+label {
+  color: #353535;
+}
+
+a {
+  transition: 0.3s;
+  color: #353535 !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2 {
+  text-align: center;
+}
+
+strong {
+  color: #353535;
+  font: inherit;
+  font-size: 12px;
+}
+
+/* animazioni */
+/* https://www.tutorialrepublic.com/css-reference/css-animatable-properties.php */
+.animateH {
+  color: red;
+  border: 6px solid #8e8e8e;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: Candara;
+  -webkit-animation: test 4s infinite; /* Chrome, Safari, Opera */
+  animation: test 4s infinite;
+} /*qua si definisce che si fa con la classe animateH, col colore, il colore del bordo e che animazione deve fare*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test {
+  50% {
+    color: #555555;
+  }
+} /*qua si definisce l'animazione 'test' per tutti i nuovi browser*/
+
+/* Standard syntax */
+@keyframes test {
+  50% {
+    color: #555555;
+  }
+} /*qua si definisce l'animazione 'test' per tutti i browser esistenti*/

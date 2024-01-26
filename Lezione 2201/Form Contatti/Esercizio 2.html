@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validazione di un form di accesso</title>
+    <link rel="stylesheet" href="Contents/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://www.bacinogrande.it/wp-content/uploads/2015/07/bacino.png"
+      type="image/png"
+    />
+    <script src="Contents/javascript.js"></script>
+  </head>
+  <body>
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="animateH">
+        Registrazione al servizio <br />
+        Tutti i campi sono obbligatori
+      </h2>
+      <h3 id="error-box"></h3>
+      <form
+        id="form"
+        action="Contents/submitOK.html"
+        method="GET"
+        onSubmit="return validaDati();"
+      >
+        <div class="row">
+          <p id="error-box"></p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              <label for="class">Classe*</label>
+              <input
+                type="text"
+                placeholder="1AAAAA"
+                id="class"
+                name="reset"
+                required
+                class="form-control"
+                maxlength="5"
+                pattern="[0-9]{1}[A-Za-z]{4}"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lName">Cognome*</label>
+              <input
+                type="text"
+                placeholder="cognome"
+                class="form-control"
+                id="lName"
+                name="reset"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="form-group">
+              <label for="meccanografico">Codice Meccanografico*</label>
+              <input
+                type="text"
+                required
+                class="form-control"
+                maxlength="10"
+                id="meccanografico"
+                name="reset"
+                placeholder="AAAA123456"
+                pattern="[A-Za-z]{4}[A-Za-z0-9]{6}"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email1">Indirizzo mail:*</label>
+              <input
+                type="email"
+                id="email1"
+                name="reset"
+                class="form-control"
+                placeholder="x@x.x"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="indirizzo">Indirizzo*</label>
+              <select required id="indirizzo" class="form-control">
+                <option value="Scegli" disabled selected>
+                  -Scegli Una Delle Seguenti-
+                </option>
+                <option class="form-control" value="SIA">SIA</option>
+                <option value="AFM">AFM</option>
+                <option value="Informatica">Informatica</option>
+                <option value="Elettronica">Elettronica</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <center>
+                <label for="trattamento">Consenso Al Trattamento*</label><br />
+              </center>
+              <center>
+                <label for="Si">
+                  <input
+                    type="radio"
+                    id="Si"
+                    name="trattamento"
+                    value="Si"
+                    checked
+                    required
+                  />
+                  <span>Si</span>
+                </label>
+                <label for="No">
+                  <input
+                    type="radio"
+                    id="No"
+                    name="trattamento"
+                    value="No"
+                    required
+                  />
+                  <span>No</span>
+                </label>
+              </center>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">
+                Invia
+              </button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-group">
+              <label for="fName">Nome*</label>
+              <input
+                type="text"
+                placeholder="nome"
+                class="form-control"
+                id="fName"
+                name="reset"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="form-group">
+              <label for="fiscal">Codice Fiscale*</label>
+              <input
+                type="text"
+                placeholder="AAAAAA12A12A123A"
+                required
+                name="reset"
+                id="fiscal"
+                class="form-control"
+                maxlength="16"
+                pattern="[A-Z]{6}\d{2}[A-Z]\d{2}[A-Z]\d{3}[A-Z]"
+              />
+            </div>
+            <div class="form-group">
+              <label for="annoIscrizione"
+                >Anno Prima Iscrizione Scuola Superiore*</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                name="reset"
+                id="annoIscrizione"
+                required
+                min="2010"
+                placeholder="Da 2010 ad Anno Corrente"
+              />
+            </div>
+            <div class="form-group">
+              <label for="denScuola">Denominazione Scuola*</label>
+              <input
+                type="text"
+                minlength="10"
+                required
+                class="form-control"
+                id="denScuola"
+                name="reset"
+                placeholder="nome della scuola"
+              />
+            </div>
+            <div class="form-group">
+              <label for="oreInformatica"
+                >Numero Ore Informatica Per Settimana*</label
+              >
+              <select required id="oreInformatica" class="form-control">
+                <option value="Scegli" disabled selected>
+                  -Scegli Una Delle Seguenti-
+                </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+            <center>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-block"
+                onclick="resetta()"
+              >
+                Resetta
+              </button>
+            </center>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

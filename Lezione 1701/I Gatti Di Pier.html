@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Corso Bello Su HTML5" />
+    <meta
+      name="keywords"
+      content="html, no css, adotta, gatto, adotta un gatto, sito esercizio"
+    />
+    <link
+      rel="icon"
+      href="https://www.petfinder.com/sites/default/files/images/content/100691619-what-is-cat-fostering-632x475.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela Round"
+      rel="stylesheet"
+    />
+    <title>Adotta Un Gatto</title>
+    <style>
+      #arcobaleno {
+        text-align: center;
+        font-family: "Varela Round";
+        animation: cambioColore 7s infinite; /* 7s è la durata totale dell'animazione */
+      }
+
+      h1 {
+        font-size: 2em; /* Dimensione del testo relativa */
+      }
+
+      .container {
+        width: 80%; /* Larghezza relativa rispetto al contenitore padre */
+      }
+
+      img {
+        max-width: 100%; /* Rendi le immagini responsivi */
+        height: auto; /* Evita la distorsione delle immagini */
+      }
+
+      /* Stili di base per il layout flessibile */
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Per andare a capo quando non c'è abbastanza spazio */
+        justify-content: center; /* Allinea al centro orizzontalmente */
+      }
+
+      /* Media query per il layout flessibile sui dispositivi più piccoli */
+      @media only screen and (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Cambia la direzione del layout per dispositivi mobili */
+        }
+      }
+
+      /* Stili di base per schermi più grandi */
+      body {
+        font-size: 16px;
+      }
+
+      /* Media query per adattare lo stile per schermi più piccoli */
+      @media only screen and (max-width: 600px) {
+        body {
+          font-size: 14px; /* Modifica la dimensione del font per dispositivi mobili */
+        }
+        /* Aggiungi altre regole di stile specifiche per dispositivi mobili qui */
+      }
+
+      @keyframes cambioColore {
+        0% {
+          color: #ff0000;
+        } /* Rosso */
+        14.29% {
+          color: #ff7f00;
+        } /* Arancione */
+        28.57% {
+          color: #ffff00;
+        } /* Giallo */
+        42.86% {
+          color: #00ff00;
+        } /* Verde */
+        57.14% {
+          color: #0000ff;
+        } /* Blu */
+        71.43% {
+          color: #4b0082;
+        } /* Indaco */
+        85.71% {
+          color: #8b00ff;
+        } /* Viola */
+        100% {
+          color: #ff0000;
+        } /* Ritorno al Rosso per il ciclo */
+      }
+    </style>
+  </head>
+  <body style="background-color: lightgray">
+    <div>
+      <h1 align="center" id="arcobaleno">
+        Adotta Anche Tu Un Gatto Oggi! (Non Domani)
+      </h1>
+    </div>
+    <div align="center">
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Uncle_Sam_%28pointing_finger%29.png/1200px-Uncle_Sam_%28pointing_finger%29.png"
+          alt="THE COMPANY IS HIRING"
+          width="8%"
+        />
+      </figure>
+    </div>
+    <div style="display: flex; text-align: center; width: 100%">
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg"
+                alt="Sili"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer">
+                Sili, 4 anni, Castrato
+              </figcaption>
+              <details style="cursor: pointer">
+                <p style="font-weight: bolder">Sili, il gatto giocoso</p>
+                <ul>
+                  <li>Sili ama mosrtarti la lingua</li>
+                  <li>É un gatto, affettuoso e giocherellone</li>
+                  <li>Va D'accordo con i bambini</li>
+                </ul>
+              </details>
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://preview.redd.it/ktxuj7clhbkb1.jpg?width=1179&format=pjpg&auto=webp&s=b1afe6e579a3c3416659d16b039824e7b0dde873"
+                alt="Giuseppe"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer">
+                Giuseppe, 8 anni, Non Castrato
+              </figcaption>
+              <details style="cursor: pointer">
+                <p style="font-weight: bolder">Giuseppe, il gattone da casa</p>
+                <ul>
+                  <li>
+                    Giuseppe é un gatto un po' vecchiotto, infatti lo si puó
+                    vedere dalla sua espressione
+                  </li>
+                  <li>ottimo gatto per poter fare lunghe dormite assieme</li>
+                  <li>Ama fare lunghe passeggiate fuori</li>
+                </ul>
+              </details>
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://tr.rbxcdn.com/61d4ba809099fcebadbe6c8dd6d67306/420/420/Hat/Png"
+                alt="Antonio"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer">
+                Giuseppe, 2 anni, imprenditore, castrato
+              </figcaption>
+              <details style="cursor: pointer">
+                <p style="font-weight: bolder">
+                  Antonio, il gatto commercialista
+                </p>
+                <ul>
+                  <li>
+                    Antonio si é laureato all'universitá "La Sapienza" in
+                    economia
+                  </li>
+                  <li>É molto bravo coi numeri</li>
+                  <li>Non, ama giocare e non sopporta i bambini</li>
+                  <li>
+                    Torna a casa stanco dopo un'intensa giornata di lavoro
+                  </li>
+                </ul>
+              </details>
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://res.cloudinary.com/petrescue/image/upload/b_auto:predominant,f_auto,c_pad,h_638,w_638/v1700345060/fgjl4izzjhadoerhguwn.jpg"
+                alt="Dave"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer">
+                Dave, il magico mago del formaggio, 6 anni, Castrato
+              </figcaption>
+              <details style="cursor: pointer">
+                <p style="font-weight: bolder">
+                  Dave, gli piace molto il formaggio
+                </p>
+                <ul>
+                  <li>Dave ama il formaggio, é diventato un mago</li>
+                  <li>É molto magico</li>
+                  <li>Nel tempo libero ama sognare il formaggio</li>
+                </ul>
+              </details>
+            </figure>
+          </article>
+        </main>
+      </div>
+    </div>
+    <br />
+    <hr / style="border-radius: 20px; width: 70%; border: solid 2px gray;">
+    <div align="center"><h1 id="arcobaleno">I Gatti Di Pier</h1></div>
+    <div style="display: flex; text-align: center">
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/KxCTQ3F/IMG-20240117-204553.jpg"
+                alt="Piri"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                Questa é Nyx Che stava facendo una faccia buffa
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">Sili, il gatto giocoso</p>
+                <ul>
+                  <li>Sili ama mosrtarti la lingua</li>
+                  <li>É un gatto, affettuoso e giocherellone</li>
+                  <li>Va D'accordo con i bambini</li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/x8xMjm3/IMG-20240106-WA0025.jpg"
+                alt="Giuseppe"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                Io E Nyx Ci Siamo Fatti Un Selfie
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">Giuseppe, il gattone da casa</p>
+                <ul>
+                  <li>
+                    Giuseppe é un gatto un po' vecchiotto, infatti lo si puó
+                    vedere dalla sua espressione
+                  </li>
+                  <li>ottimo gatto per poter fare lunghe dormite assieme</li>
+                  <li>Ama fare lunghe passeggiate fuori</li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/GC91Y0N/IMG-20231103-125402.jpg"
+                alt="Antonio"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                La Mina che voleva sniffare tutta la maglietta
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">
+                  Antonio, il gatto commercialista
+                </p>
+                <ul>
+                  <li>
+                    Antonio si é laureato all'universitá "La Sapienza" in
+                    economia
+                  </li>
+                  <li>É molto bravo coi numeri</li>
+                  <li>Non, ama giocare e non sopporta i bambini</li>
+                  <li>
+                    Torna a casa stanco dopo un'intensa giornata di lavoro
+                  </li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/tY3F13B/IMG-20231224-124659.jpg"
+                alt="Dave"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                Chissá che cosa aveva visto qua la Mina per fare questa faccia
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">
+                  Dave, gli piace molto il formaggio
+                </p>
+                <ul>
+                  <li>Dave ama il formaggio, é diventato un mago</li>
+                  <li>É molto magico</li>
+                  <li>Nel tempo libero ama sognare il formaggio</li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+    </div>
+    <br />
+    <div style="display: flex; text-align: center; width: 100%">
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/k4KJqCM/IMG-20240106-134908.jpg"
+                alt="Piri"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                Un bacetto Dalla Mina
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">Sili, il gatto giocoso</p>
+                <ul>
+                  <li>Sili ama mosrtarti la lingua</li>
+                  <li>É un gatto, affettuoso e giocherellone</li>
+                  <li>Va D'accordo con i bambini</li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+      <div align="center" style="width: auto; flex: 25%; padding: 10px">
+        <main>
+          <article
+            style="
+              border: solid 2px;
+              border-color: lightgray;
+              border-radius: 20px;
+              background-color: #949494;
+            "
+          >
+            <figure>
+              <img
+                src="https://i.ibb.co/C5TKgrx/IMG-20240115-071431.jpg"
+                alt="Giuseppe"
+                style="cursor: pointer"
+                width="100%"
+              />
+              <figcaption style="cursor: pointer; font-weight: bolder">
+                Pensando Ai Croccantini...
+              </figcaption>
+              <!-- <details style="cursor: pointer">
+                <p style="font-weight: bolder">Giuseppe, il gattone da casa</p>
+                <ul>
+                  <li>
+                    Giuseppe é un gatto un po' vecchiotto, infatti lo si puó
+                    vedere dalla sua espressione
+                  </li>
+                  <li>ottimo gatto per poter fare lunghe dormite assieme</li>
+                  <li>Ama fare lunghe passeggiate fuori</li>
+                </ul>
+              </details> -->
+            </figure>
+          </article>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
