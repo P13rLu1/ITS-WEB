@@ -184,7 +184,7 @@ h2 {
   background: white;
   width: 70%;
   min-height: 60%;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 .jumbotron-form p {
   margin-bottom: 1em;
@@ -201,7 +201,7 @@ h2 {
 #arrival:focus,
 #departure:focus,
 #guests:focus,
-#children:focus { 
+#children:focus {
   border: 1px solid #d4af;
   box-shadow: 0 0 10px rgb(112, 34, 86);
 }
