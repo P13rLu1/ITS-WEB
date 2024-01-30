@@ -196,6 +196,7 @@ h2 {
   width: 80%;
   height: 2.5em;
   padding: 0.5em;
+  border-radius: 12px;
 }
 
 #arrival:focus,
