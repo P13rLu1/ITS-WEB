@@ -1,0 +1,13 @@
+.giorno{
+    background-color: red;
+    font-weight: bold;
+}
+
+.giorno1{
+    background-color: green;
+    font-weight: bolder;
+}
+
+tr, td{
+    border: 2px solid blue;
+}

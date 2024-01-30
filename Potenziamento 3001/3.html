@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="3.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="https://google.com">
+      <label for="nome">Il Tuo Nome:*</label><br />
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Il Tuo Nome Qui"
+        required
+      />
+      <br />
+      <label for="secondonome">Secondo Nome:</label><br />
+      <input
+        type="text"
+        name="secondonome"
+        id="secondonome"
+        placeholder="Il Tuo Secondo Nome"
+      />
+      <br />
+      <label for="cognome">Il Tuo Cognome:*</label><br />
+      <input
+        type="text"
+        name="cognome"
+        id="cognome"
+        placeholder="Il Tuo Nome Qui"
+        required
+      />
+      <br />
+      <label for="datadinascita">La Tua Data Di Nascita:*</label><br />
+      <input
+        type="date"
+        name="datadinascita"
+        id="datadinascita"
+        placeholder="Quando Sei Nato"
+        required
+      />
+      <br />
+      <label for="stato">Stato:*</label><br />
+      <select name="stato" id="stato" required>
+        <option value="Seleziona" disabled selected>- Seleziona -</option>
+        <option value="Casa">Casa Mia</option>
+        <option value="Cristorante">Cristorante</option>
+        <option value="Chiesia">Chiesia</option>
+      </select>
+    </form>
+  </body>
+</html>

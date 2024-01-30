@@ -1,0 +1,11 @@
+p {
+  color: red;
+  border: 1px solid blue;
+  padding: 30px;
+  margin-top: 80px;
+  background-image: url(https://media.istockphoto.com/id/589415708/it/foto/frutta-fresca-e-verdura.jpg?s=612x612&w=0&k=20&c=hCaRSdjKzB4phEZRlYS9OPORCwrjiyHFSQ1jEGVnvB4=);
+}
+
+h1 {
+  color: blue;
+}
