@@ -22,7 +22,90 @@
       <a href="#">Prodotti</a>
       <a href="#">Contatti</a>
     </nav>
+    <div class="container">
+      <div class="col-left">
+        <h2>Menú</h2>
+        <hr />
+        <nav class="categories">
+          <ul>
+            <li><a href="#">Cate. 1</a></li>
+            <li><a href="#">Cate. 2</a></li>
+            <li><a href="#">Cate. 3</a></li>
+          </ul>
+        </nav>
+      </div>
 
+      <div class="col-center">
+        <section class="product-details">
+          <h2>Dettagli del Prodotto</h2>
+          <hr />
+
+          <div class="product-container">
+            <div class="product">
+              <h2>Titolo Prodotto</h2>
+              <div class="product-images">
+                <img
+                  src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/71a00703e8c14c76aa8471445a9eaf40_9366/Scarpe_Ultrabounce_Blu_HP5783_HM1.jpg"
+                  alt="Product 1 Image"
+                  class="rounded-image small-image"
+                />
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/i-stock-1287493837-1.jpg?c=16x9&q=h_833,w_1480,c_fill"
+                  alt="Product 1 Image"
+                  class="rounded-image small-image"
+                />
+                <img
+                  src="https://github.blog/wp-content/uploads/2023/10/68747470733a2f2f696d672e697463682e7a6f6e652f6157316e4c7a457a4e6a45344e5459794c6e42755a773d3d2f6f726967696e616c2f3649583458742e706e67.png?fit=1200%2C630"
+                  alt="Product 1 Image"
+                  class="rounded-image small-image"
+                />
+              </div>
+
+              <img
+                src="https://taschen.makaira.media/taschen/image/upload/f_webp,w_1200/v1673547080/products-live/6e16b9c0059b44d919b36996b199210a.jpg"
+                alt="Product 1 Large Image"
+                class="rounded-image large-image"
+              />
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/keuagsw0/poster/d/j/w/medium-joker07-joker-movie-poster-with-frame-joker-framed-original-imafvfmduhx3n6av.jpeg?q=20&crop=false"
+                alt="Product 1 Large Image"
+                class="rounded-image large-image"
+              />
+              <p>Breve descrizione del prodotto 1.</p>
+              <p>Prezzo: 100€</p>
+            </div>
+          </div>
+          <label for="quantity">Quantità:</label>
+          <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <input type="checkbox" id="addToCartCheckbox" />
+          <label class="add-to-cart-btn" for="addToCartCheckbox"
+            >Aggiungi al Carrello</label
+          >
+
+          <p id="added-to-cart-message">Aggiunto Al Carrello!</p>
+        </section>
+      </div>
+
+      <div class="col-right">
+        <section class="news">
+          <h2>Ultime News</h2>
+          <hr />
+          <div class="news-bar">
+            <ol>
+              <li><p>Notizia 1</p></li>
+              <li><p>Notizia 2</p></li>
+              <li><p>Notizia 3</p></li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </div>
     <footer>
       <p>&copy; 2024 Nome del Tuo Sito</p>
     </footer>

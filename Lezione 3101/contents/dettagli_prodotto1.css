@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #ccc;
 }
 
 nav {
@@ -15,6 +16,64 @@ nav a {
   padding: 10px 20px;
 }
 
+.product-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rounded-image {
+  border-radius: 10px;
+  max-width: 30%; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-image:hover,
+.large-image:hover {
+  transform: scale(1.3);
+  transition: 0.5 ease 0s;
+}
+
+.small-image {
+  max-height: 80px; 
+  margin: 10px 10px 20px 20px;
+}
+
+.large-image {
+  max-width: 22%; 
+  margin-top: 5px; 
+  margin-left: 10px;
+}
+
+.product-container p {
+  font-size: 16px;
+  color: #333;
+}
+
+.news-bar {
+  background-color: #444;
+  margin: 4px 4px 6px 6px;
+  color: white;
+  border-radius: 12px;
+  padding: 4px 4px 2px 2px;
+}
+
+.col-left hr,
+.col-right hr,
+.col-left h2,
+.col-right h2 {
+  margin: 4px 4px 6px 6px;
+}
+
+.categories {
+  border-radius: 20px;
+  margin: 4px 4px 6px 6px;
+}
+
+.spacer {
+  margin: 20px 20px 0px 0px;
+}
+
 .container {
   display: flex;
   margin: 20px;
@@ -23,9 +82,56 @@ nav a {
 .col-left,
 .col-right {
   width: 150px;
+  border-radius: 12px;
+  background-color: aliceblue;
 }
 
 .col-center {
-  flex-grow: 1;
-  padding: 0 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+.product {
+  border-radius: 12px;
+  border: 1px solid rgba(78, 78, 78, 0.616);
+  background-color: antiquewhite;
+}
+
+.product-details {
+  text-align: center;
+}
+
+#quantity {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.add-to-cart-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+}
+
+#addToCartCheckbox {
+  display: none;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #327435;
+}
+
+#added-to-cart-message {
+  display: none;
+}
+
+#addToCartCheckbox:checked + .add-to-cart-btn {
+  background-color: #45a049;
+}
+
+#addToCartCheckbox:checked ~ #added-to-cart-message {
+  display: block;
 }

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #ccc;
 }
 
 nav {
@@ -15,6 +16,30 @@ nav a {
   padding: 10px 20px;
 }
 
+.news-bar {
+  background-color: #444;
+  margin: 4px 4px 6px 6px;
+  color: white;
+  border-radius: 12px;
+  padding: 4px 4px 2px 2px;
+}
+
+.col-left hr,
+.col-right hr,
+.col-left h2,
+.col-right h2 {
+  margin: 4px 4px 6px 6px;
+}
+
+.categories {
+  border-radius: 20px;
+  margin: 4px 4px 6px 6px;
+}
+
+.spacer {
+  margin: 20px 20px 0px 0px;
+}
+
 .container {
   display: flex;
   margin: 20px;
@@ -23,6 +48,8 @@ nav a {
 .col-left,
 .col-right {
   width: 150px;
+  border-radius: 12px;
+  background-color: aliceblue;
 }
 
 .col-center {
@@ -42,8 +69,12 @@ nav a {
   padding: 10px;
   cursor: pointer;
   box-sizing: border-box;
+  border-radius: 12px;
+  background-color: antiquewhite;
+  border: 1px solid rgb(122, 115, 106);
 }
 
 .product:hover {
-  border-color: #555;
+  border-color: black;
+  transition: 0.5s ease 0s;
 }
