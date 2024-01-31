@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#contenitorePrincipale {
+  background-color: lightgray;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenitoreInterno {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  float: left;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+}
+
+.contenitoreInterno > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contenitoreInterno::after {
+  content: "";
+  background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=600&h=400");
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  z-index: 1;
+}
