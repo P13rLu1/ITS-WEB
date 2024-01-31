@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contents/index.css" />
+    <link rel="stylesheet" href="contents/global-header.css" />
+    <link rel="stylesheet" href="contents/global-footer.css" />
+    <title>Pier Shop</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Ford-Motor-Company-Logo.png"
+        alt="Logo"
+      />
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Prodotti</a>
+      <a href="#">Contatti</a>
+    </nav>
+
+    <div class="container">
+      <div class="col-left">
+        <nav>
+          <ul>
+            <li><a href="#">Cate. 1</a></li>
+            <li><a href="#">Cate. 2</a></li>
+            <li><a href="#">Cate. 3</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-center">
+        <div class="product-container">
+          <div
+            class="product"
+            onclick="window.location.href='dettagli_prodotto1.html';"
+          >
+            <h2>Prodotto 1</h2>
+            <p>Breve descrizione del prodotto 1.</p>
+            <p>Prezzo: $100</p>
+          </div>
+
+          <div
+            class="product"
+            onclick="window.location.href='dettagli_prodotto2.html';"
+          >
+            <h2>Prodotto 2</h2>
+            <p>Breve descrizione del prodotto 2.</p>
+            <p>Prezzo: $150</p>
+          </div>
+
+          <div
+            class="product"
+            onclick="window.location.href='dettagli_prodotto3.html';"
+          >
+            <h2>Prodotto 3</h2>
+            <p>Breve descrizione del prodotto 3.</p>
+            <p>Prezzo: $200</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-right">
+        <section class="news">
+          <h2>Ultime News</h2>
+          <p>Notizia 1</p>
+          <p>Notizia 2</p>
+          <p>Notizia 3</p>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Nome del Tuo Sito</p>
+    </footer>
+  </body>
+</html>

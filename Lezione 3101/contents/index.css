@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.col-left,
+.col-right {
+  width: 150px;
+}
+
+.col-center {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  flex: 1 0 calc(33.333% - 20px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.product:hover {
+  border-color: #555;
+}
