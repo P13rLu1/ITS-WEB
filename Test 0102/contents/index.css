@@ -108,28 +108,10 @@ nav a {
 }
 
 .prodotto {
-  border: 1px solid #ccc;
-  padding: 10px;
-  height: 300px;
-  box-sizing: border-box;
-  border-radius: 12px;
+  height: 500px;
   background-color: antiquewhite;
-  border: 1px solid rgb(122, 115, 106);
-  margin-bottom: 20px;
-}
-
-.product:hover,
-.product1:hover {
-  border: 1px solid black;
-  transition: 0.4s ease 0s;
-  filter: drop-shadow(0px 0px 10px black);
-}
-
-.prodotto {
   width: 100%;
-  margin: 10px;
-  padding: 20px;
-  border: 2px solid #ccc;
+  margin: 5px 10px 50px 0px;
   float: left;
   box-sizing: border-box;
   color: white;
@@ -137,6 +119,14 @@ nav a {
   position: relative;
   background-size: cover;
   border-radius: 20px;
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+.product:hover,
+.product1:hover {
+  border: 1px solid black;
+  transition: 0.4s ease 0s;
+  filter: drop-shadow(0px 0px 15px black);
 }
 
 .prodotto > * {
@@ -179,6 +169,7 @@ nav a {
   background-size: cover;
   position: relative;
   border-radius: 20px;
+  height: 350px;
 }
 
 .product1 {
