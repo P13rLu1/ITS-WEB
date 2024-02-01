@@ -113,7 +113,7 @@ nav a {
 
 .col-left {
   width: 300px;
-  border-radius: 12px;
+  border-radius: 20px;
   background-color: aliceblue;
 }
 
@@ -246,9 +246,10 @@ nav a {
 .news-article {
   max-width: 900px;
   margin-bottom: 20px;
-  padding: 20px;
+  margin-top: 4px;
+  padding: 20px 20px 20px 20px; 
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
