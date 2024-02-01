@@ -120,9 +120,9 @@ nav a {
 
 .product:hover,
 .product1:hover {
-  border: 2px solid black;
-  border-color: black;
-  transition: 0.5s ease 0s;
+  border: 1px solid black;
+  transition: 0.4s ease 0s;
+  filter: drop-shadow(0px 0px 10px black);
 }
 
 .prodotto {
@@ -136,6 +136,7 @@ nav a {
   text-align: center;
   position: relative;
   background-size: cover;
+  border-radius: 20px;
 }
 
 .prodotto > * {
@@ -155,6 +156,7 @@ nav a {
   bottom: 0;
   filter: blur(2px);
   z-index: 1;
+  border-radius: 20px;
 }
 
 .product-container {
@@ -176,6 +178,7 @@ nav a {
   color: white;
   background-size: cover;
   position: relative;
+  border-radius: 20px;
 }
 
 .product1 {
@@ -191,6 +194,7 @@ nav a {
   color: white;
   background-size: cover;
   position: relative;
+  border-radius: 20px;
 }
 
 .product1 p,
@@ -215,6 +219,7 @@ nav a {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   z-index: 1;
+  border-radius: 20px;
 }
 
 .product::after {
@@ -227,4 +232,5 @@ nav a {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   z-index: 1;
+  border-radius: 20px;
 }
