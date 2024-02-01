@@ -9,7 +9,7 @@ footer a {
 }
 
 form {
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -21,7 +21,6 @@ label {
 
 select,
 input {
-  width: 100%;
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
@@ -29,9 +28,17 @@ input {
   border: 1px solid;
 }
 
-.ptsd img{
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  width: 100%;
+  padding: 8px;
   border-radius: 10px;
-  max-width: 100%; 
+  border: 1px solid;
+}
+
+.ptsd img {
+  border-radius: 10px;
+  max-width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -112,7 +119,7 @@ nav a {
 }
 
 .col-left {
-  width: 300px;
+  width: 500px;
   border-radius: 20px;
   background-color: aliceblue;
 }
@@ -247,7 +254,7 @@ nav a {
   max-width: 900px;
   margin-bottom: 20px;
   margin-top: 4px;
-  padding: 20px 20px 20px 20px; 
+  padding: 20px 20px 20px 20px;
   border: 1px solid #ccc;
   border-radius: 20px;
   background-color: #fff;
