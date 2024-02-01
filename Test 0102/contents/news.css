@@ -17,6 +17,8 @@ form {
 label {
   display: block;
   margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 select,
