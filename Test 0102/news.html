@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contents/global-footer.css" />
+    <link rel="stylesheet" href="contents/global-header.css" />
+    <link rel="stylesheet" href="contents/news.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/thumbnails/009/362/747/small/simple-medical-icon-symbol-sign-design-free-png.png"
+      type="image/x-icon"
+    />
+    <title>News</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="https://www.policlinicogemelli.it/wp-content/uploads-shared/2019/02/logo-policlinico-gemelli-500-color-1.png"
+          alt="Logo"
+      /></a>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Prodotti</a>
+      <a href="#">Contatti</a>
+    </nav>
+
+    <div class="container">
+      <div class="col-left">
+        <form action="index.html" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="cognome">Cognome:</label>
+          <input type="text" id="cognome" name="cognome" required />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Inserisci il tuo indirizzo email"
+            required
+          />
+
+          <label for="telefono">Telefono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Inserisci il tuo numero di telefono"
+            required
+          />
+
+          <label>Sesso:</label>
+          <label
+            ><input type="radio" name="sesso" value="maschio" required />
+            Maschio</label
+          >
+          <label
+            ><input type="radio" name="sesso" value="femmina" required />
+            Femmina</label
+          >
+
+          <label for="dataNascita">Data di Nascita:</label>
+          <input
+            type="date"
+            id="dataNascita"
+            name="dataNascita"
+            placeholder="Seleziona la data di nascita"
+            required
+          />
+
+          <label for="provincia">Provincia di Appartenenza:</label>
+          <select id="provincia" name="provincia" required>
+            <option value="pz">Potenza</option>
+            <option value="mt">Matera</option>
+            <option value="ba">Bari</option>
+            <option value="fg">Foggia</option>
+            <option value="le">Lecce</option>
+          </select>
+
+          <div class="checkbox-group">
+            <label>Servizi:</label>
+            <label
+              ><input
+                type="checkbox"
+                name="servizi"
+                value="richiestaInformazioni"
+                required
+              />
+              Richiesta Informazioni</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="servizi"
+                value="richiestaIntervento"
+                required
+              />
+              Richiesta Intervento</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="servizi"
+                value="consulenzaMedica"
+                required
+              />
+              Consulenza Medica Generale</label
+            >
+          </div>
+
+          <div class="btn-container">
+            <button type="reset" class="reset">Reset</button>
+            <button type="submit">Invio</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-center">
+        <article class="news-article">
+          <center>
+            <figure>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0BKaHu1HSyJyLC8NQExYLs5IPBpWit_YWkg&usqp=CAU"
+                alt="immagine"
+              />
+              <figcaption>immagine bella</figcaption>
+            </figure>
+          </center>
+          <h2>Titolo dell'articolo</h2>
+          <p class="article-meta">
+            Autore: Io | Data di pubblicazione: 1 febbraio 2024
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam auctor velit eu nisl iaculis, eget hendrerit felis
+            malesuada. Maecenas vestibulum augue a turpis volutpat, sit amet
+            fermentum nunc ultricies. Integer auctor velit vel urna cursus, nec
+            fermentum massa ultricies.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Tabella</th>
+                <th>con</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Elemento 1</td>
+                <td>Contenuto 1</td>
+              </tr>
+              <tr>
+                <td>Elemento 2</td>
+                <td>Contenuto 2</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Shop Di Pier</p>
+      <br />
+      <p>
+        Via Dei Santi, 69 <br />
+        Monza
+      </p>
+      <a href="tel:+390123456789"> Chiama +39.0123.456789</a><br />
+      <a href="mailto: mail@mail.com">Scrivici</a>
+    </footer>
+  </body>
+</html>

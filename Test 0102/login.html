@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="contents/login.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/thumbnails/009/362/747/small/simple-medical-icon-symbol-sign-design-free-png.png"
+      type="image/x-icon"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="col-md-6 col-md-offset-3">
+      <h3 id="error-box"></h3>
+      <form id="form" action="index.html" method="GET">
+        <div class="row">
+          <p id="error-box"></p>
+        </div>
+        <div class="utente">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+            alt="user"
+            width="150px"
+          />
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="utente">
+              <label for="email">Email:*</label>
+              <center>
+                <input
+                  type="email"
+                  placeholder="email@email.com"
+                  id="email"
+                  required
+                  class="form-control"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                />
+              </center>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="utente">
+              <label for="password">Password:*</label>
+              <center>
+                <input
+                  type="password"
+                  placeholder="la tua password"
+                  id="password"
+                  required
+                  class="form-control"
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p id="error-box"></p>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="utente">
+              <center>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-block"
+                  id="invia"
+                >
+                  Invia
+                </button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
