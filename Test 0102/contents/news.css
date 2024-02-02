@@ -39,7 +39,7 @@ select {
 }
 
 .ptsd img {
-  border-radius: 10px;
+  border-radius: 100px;
   max-width: 100%;
   transition: transform 0.3s ease-in-out;
 }
