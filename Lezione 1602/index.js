@@ -15,7 +15,13 @@ btn.onclick = () => {
   } else if (operatore == "multiply") {
     ris.innerText = a * b;
   } else if (operatore == "divide") {
-    ris.innerText = a / b;
+    if ((a == 0) & (b == 0)) {
+      ris.innerText = "Porterai MineCreft?";
+    } else if (b != 0) {
+      ris.innerText = (a / b).toFixed(3);
+    } else {
+      ris.innerText = "Marco B";
+    }
   } else {
     alert("Selezionare Un Operatore");
   }
