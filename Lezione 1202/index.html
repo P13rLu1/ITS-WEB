@@ -3,39 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="shortcut icon"
+      href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png"
+      type="image/x-icon"
+    />
+    <title>Prima Lezione | Javascript & Bootstrap</title>
   </head>
   <body>
-    <h1 class="mon">Hello, world!</h1>
-    <h1>ciao</h1>
-    <h1>mondo</h1>
-    <div id="box">testo contenuno nel div</div>
+    <h1>Hello, world!</h1>
+    <h1>Ciao, Mondo!</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id. Quod
-      cumque quaerat quisquam consectetur quia corporis, repellendus, et placeat
-      molestias sit delectus quo, accusantium omnis ducimus eius maiores earum!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum natus
+      minima laboriosam aliquam distinctio maiores mollitia dolorem quo aliquid
+      sapiente pariatur voluptatibus delectus hic quos, quibusdam, impedit eum
+      ullam. Quae.
     </p>
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+      praesentium incidunt similique expedita omnis sint, maiores ad recusandae
+      eos perferendis! Dolore esse veritatis voluptates quo, asperiores corrupti
+      beatae fugiat a.
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
     <script>
       setTimeout(() => {
-        document.getElementsByTagName("h1")[0].innerText = "coccu";
+        //funzione, imposta e attende un timer prima di eseguire il contenuto al suo interno
+        document.getElementsByTagName("h1")[0].innerText =
+          "Testo H1 modificato";
       }, 3000);
+      const PI_GRECO = 3.14; //  constanti immodificabli una volta dichiarate
+      var globale = 10; // variabile globale si puo richiamare sempre
 
-      somma(2, 3);
-      let somma = (a, b) => {
-        return a + b;
-      };
+      function somma(a, b) {
+        //funzione somma
+        let somma = 0; // varibaile let  ambito di blocco
+        somma = a + b * PI_GRECO;
+        return somma;
+      }
+
+      somma(globale, 5); // richiamo funzione somma
+      console.log("La somma tra 10 e 5 è", somma(10, 5).toFixed(2)); // stampo nella console
+
+      for (var i = 0; i < 3; i++) {
+        console.log(somma(globale, globale).toFixed(2)); // toFixed accorcia il numero al (n) cifre dopo la virgola
+      }
+
+      let array = [10, 25, 65, 65, 8952, 1];
+
+      console.log("Il massimo numero nell'array è", Math.max(...array)); // mathmax trova numero piu grande  || Math libreria funzioni matematiche (round, floor, max, min, ceil etc)
+      console.log("il pi_greco arrotondato è", Math.round(PI_GRECO));
+
+      // cicli
+      let persona = "LUCA";
+
+      if (persona.toLowerCase == "Luca".toLowerCase) {
+        // ciclo if | se allora
+        console.log("Ciao Luca");
+      } else {
+        console.log("Non ti conosco");
+      }
+
+      let nomi = ["Luca", "Giorgio", "Paolo", "Giovanni", "Luca"];
+      console.log(nomi);
+      console.log("paolo nell'array è in posizione", nomi.indexOf("Paolo"));
+      console.log("marco nell'array è in posizione", nomi.indexOf("marco"));
+      console.log("luca nell'array è in posizione", nomi.indexOf("Luca"));
+
+      nomi.pop(); // elimina l'ultimo elemento della lista
+      console.log(nomi);
+
+      nomi.push("Davide"); // aggiunge elemento alla lista
+      console.log("ho aggiunto un nuovo nome all'array", nomi);
+      console.log(nomi.slice(0, -1)); // prende gli elementi dell'array nell'intervallo impostato
+      console.log(nomi.splice(0, 2)); // elimina solo elementi in intervallo modifica l'array stesso, quindi lo sovrascrive
+
+      nomi[2] = "Gianluigi";
+      console.log(nomi);
     </script>
   </body>
 </html>

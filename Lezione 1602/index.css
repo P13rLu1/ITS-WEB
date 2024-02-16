@@ -1,0 +1,36 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
+
+.operando {
+  padding: 8px;
+  width: 150px;
+}
+
+.box {
+  margin: 50px;
+}
+.operatore {
+  width: fit-content;
+  padding: 8px;
+}
+
+#risulato {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: lightblue;
+  width: fit-content;
+  padding: 8px;
+  margin-left: 90px;
+  font-family: monospace;
+  font-size: xx-large;
+  font-weight: bold;
+}

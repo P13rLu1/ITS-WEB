@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Calcolatrice</title>
+  </head>
+  <body>
+    <div class="box">
+      <input
+        type="number"
+        class="operando"
+        id="op1"
+        placeholder="Operando 1"
+        max="1000"
+        pattern="[1-9]"
+        oninput="controllo()"
+      />
+      <select name="" id="" class="operatore">
+        <option value="empty" selected disabled>- Scegli Un Operatore -</option>
+        <option value="sum">Somma (+)</option>
+        <option value="subtract">Sottrazione (-)</option>
+        <option value="multiply">Moltiplicazione (*)</option>
+        <option value="divide">Divisione (/)</option>
+      </select>
+      <input
+        type="number"
+        class="operando"
+        id="op2"
+        placeholder="Operando 2"
+        max="1000"
+        pattern="[1-9]"
+      />
+    </div>
+    <div id="risulato">0</div>
+  </body>
+</html>
