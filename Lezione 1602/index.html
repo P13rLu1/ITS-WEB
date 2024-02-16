@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Calcolatrice</title>
   </head>
   <body>
     <div class="box">
       <input
+        value="27"
         type="number"
         class="operando"
         id="op1"
         placeholder="Operando 1"
         max="1000"
         pattern="[1-9]"
-        oninput="controllo()"
       />
-      <select name="" id="" class="operatore">
+      <select name="" id="operator" class="operatore">
         <option value="empty" selected disabled>- Scegli Un Operatore -</option>
         <option value="sum">Somma (+)</option>
         <option value="subtract">Sottrazione (-)</option>
@@ -25,6 +30,7 @@
         <option value="divide">Divisione (/)</option>
       </select>
       <input
+        value="27"
         type="number"
         class="operando"
         id="op2"
@@ -32,7 +38,9 @@
         max="1000"
         pattern="[1-9]"
       />
+      <button id="calcbtn">Calcola</button>
+      <div id="risulato">0</div>
     </div>
-    <div id="risulato">0</div>
   </body>
+  <script src="index.js"></script>
 </html>
