@@ -1,8 +1,8 @@
 let btn = document.getElementById("calcbtn");
 
 btn.onclick = () => {
-  let a = parseFloat(document.getElementById("op1").value);
-  let b = parseFloat(document.getElementById("op2").value);
+  let a = parseFloat(document.getElementById("op1").value) || 0;
+  let b = parseFloat(document.getElementById("op2").value) || 0;
 
   let operatore = document.getElementById("operator").value;
 
