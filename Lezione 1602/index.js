@@ -1,3 +1,4 @@
+const MAX_DECIMAL_DIGITS = 5;
 let btn = document.getElementById("calcbtn");
 
 btn.onclick = () => {
@@ -18,7 +19,7 @@ btn.onclick = () => {
     if ((a == 0) & (b == 0)) {
       ris.innerText = "Porterai MineCreft?";
     } else if (b != 0) {
-      ris.innerText = (a / b).toFixed(3);
+      ris.innerText = (a / b).toFixed(MAX_DECIMAL_DIGITS);
     } else {
       ris.innerText = "Marco B";
     }
