@@ -6,14 +6,16 @@ btn.onclick = () => {
 
   let operatore = document.getElementById("operator").value;
 
+  let ris = document.getElementById("risultato");
+
   if (operatore == "sum") {
-    alert("risultato: ", a + b);
+    ris.innerText = a + b;
   } else if (operatore == "subtract") {
-    alert("risultato: ", a - b);
+    ris.innerText = a - b;
   } else if (operatore == "multiply") {
-    alert("risultato: ", a * b);
+    ris.innerText = a * b;
   } else if (operatore == "divide") {
-    alert("risultato: ", a / b);
+    ris.innerText = a / b;
   } else {
     alert("Selezionare Un Operatore");
   }

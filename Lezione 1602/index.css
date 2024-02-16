@@ -23,7 +23,7 @@ input[type="number"] {
   padding: 8px;
 }
 
-#risulato {
+#risultato {
   border: 2px solid black;
   border-radius: 4px;
   background-color: lightblue;
