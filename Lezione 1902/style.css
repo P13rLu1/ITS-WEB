@@ -8,48 +8,16 @@ body {
 .box {
   border: 5px solid black;
   border-radius: 30px;
-  height: fit-content;
-  width: fit-content;
-  margin: 30px;
   padding: 15px;
   text-align: center;
+  margin: 30px;
 }
 
+.stopw,
 .timeDisplay {
-  text-align: center;
-  /*  text-shadow: 5px 4px rgb(233, 233, 233); */
-}
-
-.stopw h1 {
-  font-family: "alarm clock", sans-serif;
-}
-
-.box h1 {
-  font-family: "alarm clock", sans-serif;
-}
-#day {
-  font-family: "alarm clock", sans-serif;
-}
-#timeText {
-  font-weight: bold;
-  font-family: "alarm clock", sans-serif;
-}
-#hm {
-  font-size: 150px;
-}
-#second {
-  font-size: 100px;
-}
-#start_btn,
-#reset_btn {
-  font-family: "alarm clock", sans-serif;
-}
-
-.data {
   margin-bottom: 30px;
-  font-size: 50px;
-  font-family: monospace;
 }
+
 .stopw {
   text-align: center;
   padding: 10px;
@@ -58,9 +26,23 @@ body {
 }
 
 .stopw button {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 25px;
+}
+
+#hm {
+  font-size: 150px;
+  font-family: "alarm clock", sans-serif;
+}
+
+#second {
+  font-size: 100px;
+  font-family: "alarm clock", sans-serif;
+}
+
+.data {
+  font-size: 50px;
+  font-family: monospace;
 }
 
 #meas {

@@ -1,50 +1,71 @@
+// Funzione per aggiornare l'orologio
 function updateTime() {
-  let d = new Date().toString(); //prendo la data e la trasformo in una stringa
-  data = d.split(" ")[4]; //divido la data (come un array) e prendo solo l'ora e inserisco nella var data
-  ora = data.split(":").slice(0, 2).join(":");
-  secondi = ":" + data.split(":")[2];
+  let d = new Date();
+  let hours = ("0" + d.getHours()).slice(-2);
+  let minutes = ("0" + d.getMinutes()).slice(-2);
+  let seconds = ("0" + d.getSeconds()).slice(-2);
+  let timeString = hours + ":" + minutes;
 
-  document.getElementById("hm").innerHTML = ora;
-  document.getElementById("second").innerText = secondi;
+  document.getElementById("hm").innerHTML = timeString;
+  document.getElementById("second").innerText = ":" + seconds;
 
-  giorno =
-    d.split(" ")[0] +
-    " " +
-    d.split(" ")[1] +
-    " " +
-    d.split(" ")[2] +
-    " " +
-    d.split(" ")[3];
-  document.getElementById("day").innerText = giorno;
+  let day = d.toDateString();
+  document.getElementById("day").innerText = day;
 }
 
-setInterval(updateTime, 10);
+// Imposta un intervallo per aggiornare l'orologio ogni secondo
+setInterval(updateTime, 1000);
 
-var isStarted = false;
-var intv;
-var partial = 0;
-var meas_;
+// Variabili per il cronometro
+let isStarted = false;
+let interval;
+let partial = 0;
+let measurement;
 
+// Gestione del clic sul pulsante di avvio/arresto del cronometro
 document.getElementById("start_btn").onclick = () => {
   if (!isStarted) {
     let start = new Date().valueOf();
-    document.getElementById("meas").innerText = 0;
+    document.getElementById("meas").innerText = "0:00:00";
 
-    intv = setInterval(() => {
-      meas_ = (new Date().valueOf() - start) / 1000 + partial; // aggiungo un parziale
-      document.getElementById("meas").innerText = meas_.toFixed(3);
-    }, 1);
+    interval = setInterval(() => {
+      measurement = (new Date().valueOf() - start) / 1000 + partial;
+      document.getElementById("meas").innerText = formatTime(measurement);
+    }, 10);
     isStarted = true;
   } else {
-    clearInterval(intv);
+    clearInterval(interval);
     isStarted = false;
-    partial = meas_; // il parziale diventa la misura fatta fino a quel momento
+    partial = measurement;
   }
 };
 
+// Funzione per formattare il tempo nel formato hh:mm:ss:sss
+function formatTime(time) {
+  let hours = Math.floor(time / 3600);
+  let minutes = Math.floor((time % 3600) / 60);
+  let seconds = Math.floor(time % 60);
+  let milliseconds = Math.floor((time % 1) * 1000);
+  return (
+    hours.toString().padStart(2, "0") +
+    ":" +
+    minutes.toString().padStart(2, "0") +
+    ":" +
+    seconds.toString().padStart(2, "0") +
+    ":" +
+    milliseconds.toString().padStart(3, "0")
+  );
+}
+
+interval = setInterval(() => {
+  measurement = (new Date().valueOf() - start) / 1000 + partial;
+  document.getElementById("meas").innerText = formatTime(measurement);
+}, 1);
+
+// Gestione del clic sul pulsante di reset del cronometro
 document.getElementById("reset_btn").onclick = () => {
-  clearInterval(intv); // Interrompe l'intervallo del cronometro se è attivo
-  isStarted = false; // Imposta lo stato del cronometro su falso
-  partial = 0; // Reimposta il valore parziale a zero
-  document.getElementById("meas").innerText = "00:00:00"; // Reimposta il display del cronometro
+  clearInterval(interval);
+  isStarted = false;
+  partial = 0;
+  document.getElementById("meas").innerText = "00:00:00";
 };
