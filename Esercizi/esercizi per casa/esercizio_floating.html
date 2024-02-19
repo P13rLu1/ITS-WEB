@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: url(https://i.pinimg.com/originals/71/fe/f0/71fef06e3f9e9d07c7e9465e411af910.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Esercizio</h1>
+    <i>Muovi questa finestra e vedrai</i>
+    <p>
+      Scrivere un codice JavaScript che riproduca lo stesso comportamento del
+      codice contenuto nel tag script di questo file
+    </p>
+  </body>
+  <script>
+    let box = document.createElement("div");
+    box.id = "box";
+    box.style.height = "330px";
+    box.style.width = "150px";
+    box.style.backgroundColor = "black";
+    box.style.position = "fixed";
+    document.body.appendChild(box);
+
+    function updatePos() {
+      let screenWidth = window.screen.width;
+      let screenHeight = window.screen.height;
+      let centerX = screenWidth / 2;
+      let centerY = screenHeight / 2;
+      let offsetX = centerX - window.screenX;
+      let offsetY = centerY - window.screenY;
+
+      box.style.top = offsetY + "px";
+      box.style.left = offsetX + "px";
+      box.style.transform = "translate(-50%,-50%)";
+      box.style.boxShadow = "rgba(0, 0, 0, 0.7) 0px 9px 20px 0px";
+    }
+
+    updatePos();
+
+    var oldX = window.screenX;
+    var oldY = window.screenY;
+    var interval = setInterval(function () {
+      if (oldX !== window.screenX || oldY !== window.screenY) {
+        console.log("moved!");
+        updatePos();
+      } else {
+        console.log("not moved!");
+      }
+      oldX = window.screenX;
+      oldY = window.screenY;
+    }, 1);
+  </script>
+</html>

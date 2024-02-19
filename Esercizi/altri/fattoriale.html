@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatore Fattoriale</title>
+    <script>
+      function calcolaFattoriale(numero) {
+        if (numero === 0 || numero === 1) {
+          return 1; // Il fattoriale di 0 e 1 è 1
+        } else {
+          // Calcolo del fattoriale utilizzando la ricorsione
+          return numero * calcolaFattoriale(numero - 1);
+        }
+      }
+
+      function eseguiCalcoloFattoriale() {
+        // Ottieni il valore inserito dall'utente
+        var inputNumero = parseInt(document.getElementById("numero").value);
+
+        // Calcola il fattoriale utilizzando la funzione calcolaFattoriale()
+        var risultatoFattoriale = calcolaFattoriale(inputNumero);
+
+        // Mostra il risultato
+        document.getElementById("risultato").innerText =
+          "Il fattoriale di " + inputNumero + " è: " + risultatoFattoriale;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calcolatore Fattoriale</h1>
+    <label for="numero">Inserisci un numero:</label>
+    <input
+      type="number"
+      id="numero"
+      placeholder="Inserisci un numero"
+    /><br /><br />
+
+    <button onclick="eseguiCalcoloFattoriale()">Calcola Fattoriale</button
+    ><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

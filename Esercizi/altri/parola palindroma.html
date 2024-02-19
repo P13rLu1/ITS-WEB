@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifica Parola Palindroma</title>
+    <script>
+      function isPalindroma(parola) {
+        // Rimuovi spazi e converti tutto in minuscolo
+        parola = parola.toLowerCase().replace(/ /g, "");
+
+        // Inverti la parola
+        var parolaInvertita = parola.split("").reverse().join("");
+
+        // Verifica se la parola è palindroma
+        return parola === parolaInvertita;
+      }
+
+      function verificaPalindroma() {
+        // Ottieni la parola inserita dall'utente
+        var inputParola = document.getElementById("parola").value;
+
+        // Verifica se la parola è palindroma utilizzando la funzione isPalindroma()
+        var risultato = isPalindroma(inputParola);
+
+        // Mostra il risultato
+        if (risultato) {
+          document.getElementById("risultato").innerText =
+            "La parola è palindroma.";
+        } else {
+          document.getElementById("risultato").innerText =
+            "La parola non è palindroma.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Verifica Parola Palindroma</h1>
+    <label for="parola">Inserisci una parola:</label>
+    <input
+      type="text"
+      id="parola"
+      placeholder="Inserisci una parola"
+    /><br /><br />
+
+    <button onclick="verificaPalindroma()">Verifica</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

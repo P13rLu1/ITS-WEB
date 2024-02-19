@@ -1,0 +1,25 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Esercizio</h1>
+    <i>Ridimensiona questa finestra e vedrai</i>
+    <p>
+      Scrivere un codice JavaScript che riproduca lo stesso comportamento del
+      codice contenuto nel tag script di questo file
+    </p>
+    <p>
+      (sono sufficienti anche meno di 200 caratteri di codice per svolgere
+      l'esercizio)
+    </p>
+    <script>
+      window.onresize = () => {
+        document.body.style.backgroundColor =
+          "hsl(0deg 100% 50% / " +
+          (0x1 -
+            (window.innerWidth * window.innerHeight) /
+              (window.screen.availWidth * window.screen.availHeight)) +
+          ")";
+      }; //addio chezz
+    </script>
+  </body>
+</html>

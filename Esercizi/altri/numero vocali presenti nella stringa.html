@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatore Vocali in una Stringa</title>
+    <script>
+      function contaVocali(stringa) {
+        // Converti la stringa in minuscolo per rendere il conteggio case-insensitive
+        stringa = stringa.toLowerCase();
+
+        // Definisci un'espressione regolare per le vocali
+        var espressioneRegolare = /[aeiou]/g;
+
+        // Utilizza il metodo match() per ottenere un array delle vocali nella stringa
+        var vocali = stringa.match(espressioneRegolare);
+
+        // Restituisci il numero di vocali trovate
+        return vocali ? vocali.length : 0;
+      }
+
+      function contatoreVocali() {
+        // Ottieni la stringa inserita dall'utente
+        var inputStringa = document.getElementById("stringa").value;
+
+        // Conta il numero di vocali nella stringa utilizzando la funzione contaVocali()
+        var numeroVocali = contaVocali(inputStringa);
+
+        // Mostra il risultato
+        document.getElementById("risultato").innerText =
+          "Il numero di vocali nella stringa è: " + numeroVocali;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Contatore Vocali in una Stringa</h1>
+    <label for="stringa">Inserisci una stringa:</label>
+    <input
+      type="text"
+      id="stringa"
+      placeholder="Inserisci una stringa"
+    /><br /><br />
+
+    <button onclick="contatoreVocali()">Contatore Vocali</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

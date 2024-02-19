@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatore Area Rettangolo</title>
+    <script>
+      function calcolaArea() {
+        // Ottieni i valori della base e dell'altezza dai campi di input
+        var base = parseFloat(document.getElementById("base").value);
+        var altezza = parseFloat(document.getElementById("altezza").value);
+
+        // Calcola l'area del rettangolo
+        var area = base * altezza;
+
+        // Mostra l'area calcolata
+        document.getElementById("risultato").innerText =
+          "L'area del rettangolo è: " + area;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calcolatore Area Rettangolo</h1>
+    <label for="base">Base:</label>
+    <input
+      type="number"
+      id="base"
+      placeholder="Inserisci la base"
+    /><br /><br />
+
+    <label for="altezza">Altezza:</label>
+    <input
+      type="number"
+      id="altezza"
+      placeholder="Inserisci l'altezza"
+    /><br /><br />
+
+    <button onclick="calcolaArea()">Calcola Area</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

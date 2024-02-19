@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generatore di Numeri Casuali</title>
+    <script>
+      function generaNumeroCasuale(min, max) {
+        // Genera un numero casuale compreso tra min e max
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function generaNumero() {
+        // Ottieni i valori inseriti dall'utente
+        var min = parseInt(document.getElementById("minimo").value);
+        var max = parseInt(document.getElementById("massimo").value);
+
+        // Genera il numero casuale utilizzando la funzione generaNumeroCasuale()
+        var numeroCasuale = generaNumeroCasuale(min, max);
+
+        // Mostra il numero casuale generato
+        document.getElementById("risultato").innerText =
+          "Numero casuale generato: " + numeroCasuale;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Generatore di Numeri Casuali</h1>
+    <label for="minimo">Valore Minimo:</label>
+    <input
+      type="number"
+      id="minimo"
+      placeholder="Inserisci il valore minimo"
+    /><br /><br />
+
+    <label for="massimo">Valore Massimo:</label>
+    <input
+      type="number"
+      id="massimo"
+      placeholder="Inserisci il valore massimo"
+    /><br /><br />
+
+    <button onclick="generaNumero()">Genera Numero Casuale</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

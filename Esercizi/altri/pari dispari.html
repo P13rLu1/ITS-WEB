@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifica Numero Pari</title>
+    <script>
+      function isPari(numero) {
+        // Controlla se il numero è pari
+        if (numero % 2 === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function verificaNumeroPari() {
+        // Ottieni il valore inserito dall'utente
+        var inputNumero = parseInt(document.getElementById("numero").value);
+
+        // Verifica se il numero è pari utilizzando la funzione isPari()
+        var risultato = isPari(inputNumero);
+
+        // Mostra il risultato
+        if (risultato) {
+          document.getElementById("risultato").innerText = "Il numero è pari.";
+        } else {
+          document.getElementById("risultato").innerText =
+            "Il numero non è pari.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Verifica Numero Pari</h1>
+    <label for="numero">Inserisci un numero:</label>
+    <input
+      type="number"
+      id="numero"
+      placeholder="Inserisci un numero"
+    /><br /><br />
+
+    <button onclick="verificaNumeroPari()">Verifica</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

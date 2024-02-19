@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatore Media Elementi Array</title>
+    <script>
+      function calcolaMediaArray(arrayNumeri) {
+        // Inizializza la variabile per la somma
+        var somma = 0;
+
+        // Itera su tutti gli elementi dell'array e aggiungi ciascun elemento alla somma
+        for (var i = 0; i < arrayNumeri.length; i++) {
+          somma += arrayNumeri[i];
+        }
+
+        // Calcola la media
+        var media = somma / arrayNumeri.length;
+
+        // Restituisci la media
+        return media;
+      }
+
+      function calcolaMediaArrayInput() {
+        // Ottieni i valori inseriti dall'utente
+        var inputArray = document.getElementById("array").value;
+
+        // Parsa la stringa in un array di numeri
+        var arrayNumeri = inputArray.split(",").map(Number);
+
+        // Calcola la media degli elementi dell'array utilizzando la funzione calcolaMediaArray()
+        var risultatoMedia = calcolaMediaArray(arrayNumeri);
+
+        // Mostra il risultato
+        document.getElementById("risultato").innerText =
+          "La media degli elementi dell'array è: " + risultatoMedia;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calcolatore Media Elementi Array</h1>
+    <label for="array"
+      >Inserisci un array di numeri (separati da virgola):</label
+    >
+    <input type="text" id="array" placeholder="Es. 1, 2, 3, 4, 5" /><br /><br />
+
+    <button onclick="calcolaMediaArrayInput()">Calcola Media</button
+    ><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>

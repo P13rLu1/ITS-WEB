@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concatenazione di Stringhe</title>
+    <script>
+      function concatenazioneStringhe(stringa1, stringa2) {
+        // Concatena le due stringhe
+        var risultato = stringa1 + stringa2;
+        return risultato;
+      }
+
+      function eseguiConcatenazione() {
+        // Ottieni i valori inseriti dall'utente
+        var inputStringa1 = document.getElementById("stringa1").value;
+        var inputStringa2 = document.getElementById("stringa2").value;
+
+        // Esegui la concatenazione utilizzando la funzione concatenazioneStringhe()
+        var risultatoConcatenazione = concatenazioneStringhe(
+          inputStringa1,
+          inputStringa2
+        );
+
+        // Mostra il risultato
+        document.getElementById("risultato").innerText =
+          "La concatenazione delle stringhe è: " + risultatoConcatenazione;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Concatenazione di Stringhe</h1>
+    <label for="stringa1">Stringa 1:</label>
+    <input
+      type="text"
+      id="stringa1"
+      placeholder="Inserisci la prima stringa"
+    /><br /><br />
+
+    <label for="stringa2">Stringa 2:</label>
+    <input
+      type="text"
+      id="stringa2"
+      placeholder="Inserisci la seconda stringa"
+    /><br /><br />
+
+    <button onclick="eseguiConcatenazione()">Concatena</button><br /><br />
+
+    <div id="risultato"></div>
+  </body>
+</html>
