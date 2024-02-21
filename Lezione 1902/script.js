@@ -1,4 +1,4 @@
-// Funzione per aggiornare l'orologio
+// Funzione per aggiornare l'orologio e la data in italiano
 function updateTime() {
   let d = new Date();
   let hours = ("0" + d.getHours()).slice(-2);
@@ -9,7 +9,13 @@ function updateTime() {
   document.getElementById("hm").innerHTML = timeString;
   document.getElementById("second").innerText = ":" + seconds;
 
-  let day = d.toDateString();
+  let options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  let day = d.toLocaleDateString("it-IT", options);
   document.getElementById("day").innerText = day;
 }
 
