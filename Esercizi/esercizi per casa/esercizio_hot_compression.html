@@ -12,14 +12,14 @@
       l'esercizio)
     </p>
     <script>
-      window.onresize = () => {
-        document.body.style.backgroundColor =
-          "hsl(0deg 100% 50% / " +
-          (0x1 -
-            (window.innerWidth * window.innerHeight) /
-              (window.screen.availWidth * window.screen.availHeight)) +
-          ")";
-      }; //addio chezz
+        window.onresize = () => {
+          document.body.style.backgroundColor =
+            "hsl(0deg 100% 50% / " +
+            ( 1 -
+              (window.innerWidth * window.innerHeight) /
+                (window.screen.availWidth * window.screen.availHeight)) +
+            ")";
+        };
     </script>
   </body>
 </html>
