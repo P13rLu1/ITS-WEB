@@ -94,7 +94,7 @@ let attori = [
   },
 
   {
-    name: "Gal Gadot",
+    name: "Gal Gasdotto",
     age: 37,
     "Born At": "Petah Tikva, Israel",
     Birthdate: "April 30, 1985",
