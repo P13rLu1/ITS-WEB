@@ -7,6 +7,7 @@
 </head>
 <body>
 <h1>Attori con età superiore a 40 anni</h1>
+<button onclick="showActorsAbove40()">Mostra attori con età > 40</button>
 <div id="attori-list"></div>
 
 <script>
@@ -21,34 +22,48 @@
   }
 
   // Funzione per mostrare gli attori con età superiore a 40 anni
-  function showActorsAbove40(attori) {
-    var attoriAbove40 = attori.filter(function(attore) {
-      return attore.age > 40;
-    });
+  function showActorsAbove40() {
+    if (typeof attori !== 'undefined') {
+      var attoriAbove40 = attori.filter(function(attore) {
+        return attore.age > 40;
+      });
 
-    var attoriList = document.getElementById('attori-list');
-    var ul = document.createElement('ul');
+      var attoriList = document.getElementById('attori-list');
+      var ul = document.createElement('ul');
 
-    attoriAbove40.forEach(function(attore) {
-      var li = document.createElement('li');
-      var img = document.createElement('img');
-      img.src = attore.photo;
-      img.alt = attore.name;
-      li.appendChild(img);
+      attoriAbove40.forEach(function(attore) {
+        var li = document.createElement('li');
+        
+        // Crea un elemento immagine e imposta il percorso e l'attributo alt
+        var img = document.createElement('img');
+        img.src = attore.photo;
+        img.alt = attore.name;
+        img.style.width = '100px'; // Opzionale: imposta la larghezza dell'immagine
+        
+        // Aggiunge l'elemento immagine al list item
+        li.appendChild(img);
 
-      var p = document.createElement('p');
-      p.textContent = attore.name + " - Age: " + attore.age + ", Birthdate: " + attore.Birthdate;
-      li.appendChild(p);
+        var p = document.createElement('p');
+        p.textContent = attore.name + " - Age: " + attore.age + ", Birthdate: " + attore.Birthdate;
+        li.appendChild(p);
 
-      ul.appendChild(li);
-    });
+        ul.appendChild(li);
+      });
 
-    attoriList.appendChild(ul);
+      // Rimuove eventuali elementi precedenti
+      while (attoriList.firstChild) {
+        attoriList.removeChild(attoriList.firstChild);
+      }
+
+      attoriList.appendChild(ul);
+    } else {
+      console.error('Array "attori" non definito.');
+    }
   }
 
-  // Carica il file JavaScript e mostra gli attori con età superiore a 40 anni
+  // Carica il file JavaScript quando viene caricata la pagina
   loadScript('arrayOggetti.js', function() {
-    showActorsAbove40(attori);
+    console.log('File JavaScript caricato.');
   });
 </script>
 </body>
