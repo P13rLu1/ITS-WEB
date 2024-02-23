@@ -75,7 +75,8 @@ let attori = [
     age: 37,
     "Born At": "New York City, NY",
     Birthdate: "November 22, 1984",
-    photo: "https://jsonformatter.org/img/scarlett-johansson.jpg",
+    photo:
+      "https://media.gqitalia.it/photos/5f9bb303b16a44e7b421f225/master/pass/40-datos-curiosos-para-descubrir-a-scarlett-johansson.jpg",
     husband: "Colin Jost",
     weight: 57.3,
     hasChildren: true,
@@ -88,7 +89,8 @@ let attori = [
     age: 38,
     "Born At": "Melbourne, Australia",
     Birthdate: "August 11, 1983",
-    photo: "https://jsonformatter.org/img/chris-hemsworth.jpg",
+    photo:
+      "https://images.mubicdn.net/images/cast_member/24207/cache-62264-1615052248/image-w856.jpg?size=800x",
     wife: "Elsa Pataky",
     weight: 91.7,
     hasChildren: true,
@@ -101,7 +103,8 @@ let attori = [
     age: 37,
     "Born At": "Petah Tikva, Israel",
     Birthdate: "April 30, 1985",
-    photo: "https://jsonformatter.org/img/gal-gadot.jpg",
+    photo:
+      "https://elleit.h-cdn.co/assets/17/23/1280x1280/square-1496924309-gal-gadot-wonder-woman-2.jpg",
     husband: "Yaron Varsano",
     weight: 59.4,
     hasChildren: true,
@@ -128,7 +131,8 @@ let attori = [
     age: 33,
     "Born At": "Scottsdale, AZ",
     Birthdate: "November 6, 1988",
-    photo: "https://jsonformatter.org/img/emma-stone.jpg",
+    photo:
+      "https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_.jpg",
     husband: "Dave McCary",
     weight: 53.8,
     hasChildren: false,
@@ -141,7 +145,7 @@ let attori = [
     "Born At": "Vancouver, Canada",
     Birthdate: "October 23, 1976",
     photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/1200px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg+",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/1200px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg",
     wife: "Blake Lively",
     weight: 84.6,
     hasChildren: true,
@@ -154,7 +158,8 @@ let attori = [
     age: 32,
     "Born At": "Dalby, Australia",
     Birthdate: "July 2, 1990",
-    photo: "https://jsonformatter.org/img/margot-robbie.jpg",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/3/33/SYDNEY%2C_AUSTRALIA_-_JANUARY_23_Margot_Robbie_arrives_at_the_Australian_Premiere_of_%27I%2C_Tonya%27_on_January_23%2C_2018_in_Sydney%2C_Australia_%2828074883999%29_%28cropped%29.jpg",
     husband: "Tom Ackerley",
     weight: 57.1,
     hasChildren: false,
