@@ -28,7 +28,8 @@ let attori = [
     age: 58,
     "Born At": "Shawnee, OK",
     Birthdate: "December 18, 1963",
-    photo: "https://jsonformatter.org/img/brad-pitt.jpg",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brad_Pitt_2019_by_Glenn_Francis.jpg/800px-Brad_Pitt_2019_by_Glenn_Francis.jpg",
     wife: null,
     weight: 75.2,
     hasChildren: true,
@@ -47,7 +48,8 @@ let attori = [
     age: 46,
     "Born At": "Los Angeles, CA",
     Birthdate: "June 4, 1975",
-    photo: "https://jsonformatter.org/img/angelina-jolie.jpg",
+    photo:
+      "https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_FMjpg_UX1000_.jpg",
     husband: null,
     weight: 58.9,
     hasChildren: true,
@@ -60,7 +62,8 @@ let attori = [
     age: 47,
     "Born At": "Los Angeles, CA",
     Birthdate: "November 11, 1974",
-    photo: "https://jsonformatter.org/img/leonardo-dicaprio.jpg",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/LeonardoDiCaprioNov08.jpg/220px-LeonardoDiCaprioNov08.jpg",
     wife: null,
     weight: 80.5,
     hasChildren: false,
@@ -111,7 +114,8 @@ let attori = [
     age: 50,
     "Born At": "Hayward, CA",
     Birthdate: "May 2, 1972",
-    photo: "https://jsonformatter.org/img/dwayne-johnson.jpg",
+    photo:
+      "https://ih0.redbubble.net/image.2990817857.2109/raf,360x360,075,t,fafafa:ca443f4786.jpg",
     wife: "Lauren Hashian",
     weight: 118.2,
     hasChildren: true,
@@ -136,7 +140,8 @@ let attori = [
     age: 45,
     "Born At": "Vancouver, Canada",
     Birthdate: "October 23, 1976",
-    photo: "https://jsonformatter.org/img/ryan-reynolds.jpg",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/1200px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg+",
     wife: "Blake Lively",
     weight: 84.6,
     hasChildren: true,
