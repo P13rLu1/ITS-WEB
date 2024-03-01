@@ -47,4 +47,8 @@ button:hover {
 }
 .success {
   color: green;
+  padding: 6px;
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
 }

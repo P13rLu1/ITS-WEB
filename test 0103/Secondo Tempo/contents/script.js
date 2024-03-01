@@ -75,7 +75,7 @@ function register() {
   } else {
     document.getElementById(
       "message"
-    ).innerHTML = `<div class="success">Registrazione avvenuta con successo!<img src="https://cdn2.iconfinder.com/data/icons/greenline/512/check-512.png" width="100px" alt="Success icon"></div>`;
+    ).innerHTML = `<div class="success">Registrazione avvenuta con successo!<br /><center><img src="https://cdn2.iconfinder.com/data/icons/greenline/512/check-512.png" width="100px" alt="Success icon"> </center></div>`;
   }
 }
 
