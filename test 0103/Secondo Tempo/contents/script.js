@@ -1,6 +1,6 @@
 function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+  return re.test(email); 
 }
 
 function validateUsername(username) {
@@ -8,7 +8,7 @@ function validateUsername(username) {
 }
 
 function validatePassword(password) {
-  const hasLowercase = /[a-z]/.test(password);
+  const hasLowercase = /[a-z]/.test(password); 
   const hasUppercase = /[A-Z]/.test(password);
   const hasNumber = /\d/.test(password);
   const hasSpecial = /[!£$%&/()=*,.\-;:_+]/.test(password);
