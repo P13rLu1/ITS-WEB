@@ -40,14 +40,20 @@ button:hover {
   background-color: #0b3f1c;
 }
 
+label {
+  font-weight: bolder;
+}
+
 .error {
   color: red;
   font-weight: bolder;
   padding: 10px;
+  text-align: center;
+  font-size: 22px;
 }
 .success {
   color: green;
-  padding: 6px;
+  padding: 10px;
   font-size: 22px;
   font-weight: bolder;
   text-align: center;
