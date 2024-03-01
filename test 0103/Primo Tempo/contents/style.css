@@ -38,6 +38,20 @@ button {
   transition: background-color 0.3s ease;
 }
 
+#decrement{
+  background-color: #321bdd;
+}
+#decrement:hover {
+  background-color: #10093f;
+}
+
+#reset{
+  background-color: #d92121;
+}
+#reset:hover {
+  background-color: #6f0f0f;
+}
+
 button:hover {
   background-color: #0b3f1c;
 }
