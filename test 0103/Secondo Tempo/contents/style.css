@@ -42,6 +42,8 @@ button:hover {
 
 .error {
   color: red;
+  font-weight: bolder;
+  padding: 10px;
 }
 .success {
   color: green;
