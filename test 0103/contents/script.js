@@ -4,22 +4,22 @@ const contaElement = document.getElementById("conta");
 function increment() {
   if (conta < 9999) {
     conta++;
-    updateconta();
+    updateConta();
   }
 }
 
 function decrement() {
   if (conta > 0) {
     conta--;
-    updateconta();
+    updateConta();
   }
 }
 
 function reset() {
   conta = 0;
-  updateconta();
+  updateConta();
 }
 
-function updateconta() {
+function updateConta() {
   contaElement.innerText = conta;
 }
