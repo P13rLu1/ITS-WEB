@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+#conta {
+  font-size: 24px;
+  color: #555;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 80px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1cc953;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b3f1c;
+}
