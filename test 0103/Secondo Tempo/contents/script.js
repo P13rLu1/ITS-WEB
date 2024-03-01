@@ -1,17 +1,28 @@
 function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
+  const atIndex = email.indexOf("@");
+  const dotIndex = email.lastIndexOf(".");
+  return atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 1;
 }
 
 function validateUsername(username) {
-  return /^[a-z]{10,}$/.test(username);
+  const lowercaseUsername = username.toLowerCase();
+  return username.length >= 10 && username === lowercaseUsername;
 }
 
 function validatePassword(password) {
-  const hasLowercase = /[a-z]/.test(password);
-  const hasUppercase = /[A-Z]/.test(password);
-  const hasNumber = /\d/.test(password);
-  const hasSpecial = /[!£$%&/()=*,.\-;:_+]/.test(password);
+  const hasLowercase = password
+    .split("")
+    .some((char) => char >= "a" && char <= "z");
+  const hasUppercase = password
+    .split("")
+    .some((char) => char >= "A" && char <= "Z");
+  const hasNumber = password
+    .split("")
+    .some((char) => char >= "0" && char <= "9");
+  const specialChars = "!£$%&/()=*,.-;:_+";
+  const hasSpecial = password
+    .split("")
+    .some((char) => specialChars.includes(char));
   return (
     password.length >= 10 &&
     hasLowercase &&
