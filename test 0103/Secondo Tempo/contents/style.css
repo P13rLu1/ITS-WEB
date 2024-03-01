@@ -23,6 +23,9 @@ input[type="checkbox"] {
   box-sizing: border-box;
   accent-color: #fb8500;
   mix-blend-mode: multiply;
+  line-height: normal;
+  width: 16px;
+  height: 16px;
 }
 
 button {
