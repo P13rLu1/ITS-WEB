@@ -1,5 +1,4 @@
 function validateEmail(email) {
-  // Controlla se l'email contiene esattamente una '@'
   const atIndex = email.indexOf("@");
   if (atIndex === -1 || email.indexOf("@", atIndex + 1) !== -1) {
     return false;
