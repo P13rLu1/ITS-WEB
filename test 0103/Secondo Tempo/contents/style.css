@@ -6,7 +6,7 @@ body {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 14px;
 }
 input:not([type="checkbox"]) {
