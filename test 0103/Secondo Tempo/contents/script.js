@@ -1,7 +1,20 @@
 function validateEmail(email) {
+  // Controlla se l'email contiene esattamente una '@'
   const atIndex = email.indexOf("@");
-  const dotIndex = email.lastIndexOf(".");
-  return atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 1; 
+  if (atIndex === -1 || email.indexOf("@", atIndex + 1) !== -1) {
+    return false;
+  }
+
+  const dotIndex = email.indexOf(".", atIndex);
+  if (dotIndex === -1) {
+    return false;
+  }
+
+  if (dotIndex <= atIndex + 1 || dotIndex === email.length - 1) {
+    return false;
+  }
+
+  return true;
 }
 
 function validateUsername(username) {
