@@ -7,13 +7,15 @@ body {
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 input:not([type="checkbox"]) {
   margin-bottom: 10px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 input [type="checkbox"] {
@@ -21,6 +23,7 @@ input [type="checkbox"] {
   width: 10px;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 button {
@@ -28,7 +31,7 @@ button {
   padding: 10px 20px;
   margin: 0 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   background-color: #1cc953;
   color: #fff;
