@@ -22,19 +22,25 @@ function validateUsername(username) {
 }
 
 function validatePassword(password) {
-  const hasLowercase = password
-    .split("")
-    .some((char) => char >= "a" && char <= "z");
-  const hasUppercase = password
-    .split("")
-    .some((char) => char >= "A" && char <= "Z");
-  const hasNumber = password
-    .split("")
-    .some((char) => char >= "0" && char <= "9");
   const specialChars = "!£$%&/()=*,.-;:_+";
-  const hasSpecial = password
-    .split("")
-    .some((char) => specialChars.includes(char));
+  let hasLowercase = false;
+  let hasUppercase = false;
+  let hasNumber = false;
+  let hasSpecial = false;
+
+  for (let i = 0; i < password.length; i++) {
+    const char = password.charAt(i);
+    if (char >= "a" && char <= "z") {
+      hasLowercase = true;
+    } else if (char >= "A" && char <= "Z") {
+      hasUppercase = true;
+    } else if (char >= "0" && char <= "9") {
+      hasNumber = true;
+    } else if (specialChars.includes(char)) {
+      hasSpecial = true;
+    }
+  }
+
   return (
     password.length >= 10 &&
     hasLowercase &&
