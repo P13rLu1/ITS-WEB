@@ -1,0 +1,46 @@
+body {
+  font-family: Candara;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:not([type="checkbox"]) {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input [type="checkbox"] {
+  margin-bottom: 10px;
+  width: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1cc953;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #0b3f1c;
+}
+
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}

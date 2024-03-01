@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contents/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/5599/5599504.png"
+      type="image/x-icon"
+    />
+    <title>Registrazione</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registrazione</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <div class="container">
+        <input type="checkbox" id="showPassword" />
+        <label for="showPassword">Mostra Password</label>
+      </div>
+      <center><button onclick="register()">Registrati</button></center>
+      <div id="message"></div>
+    </div>
+  </body>
+  <script src="contents/script.js"></script>
+</html>
