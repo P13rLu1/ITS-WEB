@@ -16,6 +16,7 @@ input:not([type="checkbox"]) {
   box-sizing: border-box;
   border-radius: 14px;
   border: 1px solid black;
+  background-color: #f4f4f4;
 }
 
 input [type="checkbox"] {
@@ -30,7 +31,7 @@ button {
   padding: 10px 20px;
   margin: 0 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 14px;
   cursor: pointer;
   background-color: #1cc953;
   color: #fff;
