@@ -49,7 +49,7 @@ I contributi sono benvenuti! Sentiti libero di aprire issue e pull request per m
 Questo progetto è concesso sotto la licenza MIT. Consulta il file [LICENSE](LICENSE) per i dettagli.
 
 ## Contatti
-Per qualsiasi domanda o chiarimento, puoi contattarmi via email a [p13rLu1@example.com](mailto:p13rLu1@example.com).
+Per qualsiasi domanda o chiarimento, puoi contattarmi via email a [pbuttazzo@studenti.apuliadigitalmaker.it](mailto:pbuttazzo@studenti.apuliadigitalmaker.it).
 
 ---
 
